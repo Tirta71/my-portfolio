@@ -1,5 +1,5 @@
 import React from "react";
-
+import TirtaImage from "../gambar/Tirta.jpg";
 export default function About() {
   return (
     <section id="about" class="st-about-wrap">
@@ -15,9 +15,12 @@ export default function About() {
         <div class="row">
           <div class="col-lg-6 wow fadeInLeft">
             <div class="st-about-img-wrap">
-              <div class="st-about-img st-dynamic-bg st-bg">
+              <div
+                class="st-about-img st-dynamic-bg st-bg"
+                data-src="assets/img/tirta.jpg"
+              >
                 <img
-                  src="assets/img/tirta.jpg"
+                  src={TirtaImage}
                   alt="Tirta.jpg"
                   style={{
                     height: "500px",
