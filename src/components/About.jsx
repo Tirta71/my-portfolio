@@ -17,8 +17,8 @@ export default function About() {
             <div class="st-about-img-wrap">
               <div class="st-about-img st-dynamic-bg st-bg">
                 <img
-                  src="/assets/img/tirta.jpg"
-                  alt="tirta.jpg"
+                  src="assets/img/tirta.jpg"
+                  alt="Tirta.jpg"
                   style={{
                     height: "500px",
                     width: "100%",
