@@ -20,4 +20,11 @@ export const portfolios = [
     category: "Full Interactive Using Api",
     LinkProject: "https://kasir-sederhana.vercel.app/edit-menu",
   },
+  {
+    id: 4,
+    image: "assets/img/portfolio/Hotel.jpg",
+    title: "Website Hotel",
+    category: "Full Interactive Using Api Can Booking Room",
+    LinkProject: "https://hotel-plum.vercel.app/",
+  },
 ];
