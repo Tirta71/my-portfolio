@@ -22,8 +22,15 @@ export const portfolios = [
   },
   {
     id: 4,
+    image: "assets/img/portfolio/HotelTubes.jpg",
+    title: "Website Hotel V1",
+    category: "Landing Page",
+    LinkProject: "https://tubes-rpl.vercel.app/",
+  },
+  {
+    id: 5,
     image: "assets/img/portfolio/Hotel.jpg",
-    title: "Website Hotel",
+    title: "Website Hotel V2",
     category: "Full Interactive Using Api Can Booking Room",
     LinkProject: "https://hotel-plum.vercel.app/",
   },
