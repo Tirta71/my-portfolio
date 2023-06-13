@@ -41,4 +41,11 @@ export const portfolios = [
     category: "Full Interactive Using Api Can Booking Room",
     LinkProject: "https://hotel-plum.vercel.app/",
   },
+  {
+    id: 7,
+    image: "assets/img/portfolio/CodaKw.jpg",
+    title: "Duplicate Coda Shop",
+    category: "Full Interactive until payment",
+    LinkProject: "https://coda-kw.vercel.app/",
+  },
 ];

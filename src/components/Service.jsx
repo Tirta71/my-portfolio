@@ -3,22 +3,22 @@ import React from "react";
 export default function Service() {
   return (
     <section>
-      <div class="st-height-b100 st-height-lg-b80"></div>
-      <div class="container">
-        <div class="st-section-heading st-style1">
-          <h4 class="st-section-heading-title">SERVICES</h4>
-          <h2 class="st-section-heading-subtitle">SERVICES</h2>
+      <div className="st-height-b100 st-height-lg-b80"></div>
+      <div className="container">
+        <div className="st-section-heading st-style1">
+          <h4 className="st-section-heading-title">SERVICES</h4>
+          <h2 className="st-section-heading-subtitle">SERVICES</h2>
         </div>
-        <div class="st-height-b25 st-height-lg-b25"></div>
+        <div className="st-height-b25 st-height-lg-b25"></div>
       </div>
 
       {/* <!-- Iconbox Container --> */}
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="st-iconbox st-style1">
-              <div class="st-iconbox-icon">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-md-6">
+            <div className="st-iconbox st-style1">
+              <div className="st-iconbox-icon">
                 <svg viewBox="0 0 512 512">
                   <g>
                     <path d="m336 144a8 8 0 0 0 -8 8v104a8 8 0 0 0 16 0v-104a8 8 0 0 0 -8-8z" />
@@ -35,18 +35,18 @@ export default function Service() {
                   </g>
                 </svg>
               </div>
-              <h2 class="st-iconbox-title">Slicing Design</h2>
-              <div class="st-iconbox-text">
+              <h2 className="st-iconbox-title">Slicing Design</h2>
+              <div className="st-iconbox-text">
                 "Professional slicing design services to transform your design
                 files into pixel-perfect, ready-to-use assets.
               </div>
             </div>
-            <div class="st-height-b30 st-height-lg-b30"></div>
+            <div className="st-height-b30 st-height-lg-b30"></div>
           </div>
           {/* <!-- .col --> */}
-          <div class="col-lg-4 col-md-6">
-            <div class="st-iconbox st-style1">
-              <div class="st-iconbox-icon">
+          <div className="col-lg-4 col-md-6">
+            <div className="st-iconbox st-style1">
+              <div className="st-iconbox-icon">
                 <svg viewBox="0 0 512 512">
                   <g>
                     <g>
@@ -132,18 +132,18 @@ export default function Service() {
                   </g>
                 </svg>
               </div>
-              <h2 class="st-iconbox-title">UI/UX Design</h2>
-              <div class="st-iconbox-text">
+              <h2 className="st-iconbox-title">UI/UX Design</h2>
+              <div className="st-iconbox-text">
                 UI/UX design services for digital products, creating intuitive
                 and visually appealing user experiences.
               </div>
             </div>
-            <div class="st-height-b30 st-height-lg-b30"></div>
+            <div className="st-height-b30 st-height-lg-b30"></div>
           </div>
           {/* <!-- .col --> */}
-          <div class="col-lg-4 col-md-6">
-            <div class="st-iconbox st-style1">
-              <div class="st-iconbox-icon">
+          <div className="col-lg-4 col-md-6">
+            <div className="st-iconbox st-style1">
+              <div className="st-iconbox-icon">
                 <svg viewBox="0 0 64 64">
                   <path d="m62.618 45-5-10h-1.618v-34h-14v34h-19v-17.217l-4.676-10.286c-.413-.909-1.325-1.497-2.324-1.497s-1.911.588-2.324 1.496l-4.676 10.287v17.217h-2.618l-5 10h5.618v18h50v-18zm-18.618-14h6v-2h-6v-2h4v-2h-4v-2h6v-2h-6v-2h4v-2h-4v-2h6v-2h-6v-2h4v-2h-4v-2h6v-2h-6v-2h10v32h-10zm12.382 6 3 6h-21.764l-3-6zm-39.387-2v-15.132l2.002 1.333 2.003-1.334v15.133zm3.743-17.361-1.741 1.159-3.002-2.001-2.998 2-1.735-1.158 1.654-3.639h6.167zm-5.242-9.316c.18-.393.828-.394 1.008.001l1.67 3.676h-4.349zm-4.496 11.547 1.997 1.333 1.998-1.333v15.13h-3.995zm-3.382 17.13h21.764l-3 6h-21.764zm1.382 8h18.618l3.382-6.764v22.764h-22zm46 16h-22v-22.764l3.382 6.764h18.618z" />
                   <path d="m19 57h2v2h-2z" />
@@ -154,18 +154,18 @@ export default function Service() {
                   <path d="m28 30c0 1.654 1.346 3 3 3s3-1.346 3-3-1.346-3-3-3-3 1.346-3 3zm4 0c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1z" />
                 </svg>
               </div>
-              <h2 class="st-iconbox-title">Contentful Development</h2>
-              <div class="st-iconbox-text">
+              <h2 className="st-iconbox-title">Contentful Development</h2>
+              <div className="st-iconbox-text">
                 Experience efficient and dynamic web development with my expert
                 Contentful services.
               </div>
             </div>
-            <div class="st-height-b30 st-height-lg-b30"></div>
+            <div className="st-height-b30 st-height-lg-b30"></div>
           </div>
           {/* <!-- .col --> */}
-          <div class="col-lg-4 col-md-6">
-            <div class="st-iconbox st-style1">
-              <div class="st-iconbox-icon">
+          <div className="col-lg-4 col-md-6">
+            <div className="st-iconbox st-style1">
+              <div className="st-iconbox-icon">
                 <svg viewBox="0 0 512 512">
                   <g>
                     <path d="M216,456H160a8,8,0,0,0,0,16h56a8,8,0,0,0,0-16Z" />
@@ -174,18 +174,18 @@ export default function Service() {
                   </g>
                 </svg>
               </div>
-              <h2 class="st-iconbox-title">Mobile Layout</h2>
-              <div class="st-iconbox-text">
+              <h2 className="st-iconbox-title">Mobile Layout</h2>
+              <div className="st-iconbox-text">
                 "Maximize your mobile app's user experience with my professional
                 development services.
               </div>
             </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
+            <div className="st-height-b0 st-height-lg-b30"></div>
           </div>
           {/* <!-- .col --> */}
-          <div class="col-lg-4 col-md-6">
-            <div class="st-iconbox st-style1">
-              <div class="st-iconbox-icon">
+          <div className="col-lg-4 col-md-6">
+            <div className="st-iconbox st-style1">
+              <div className="st-iconbox-icon">
                 <svg viewBox="0 0 512 512">
                   <path d="m48 496h416a32.036 32.036 0 0 0 32-32v-416a32.036 32.036 0 0 0 -32-32h-416a32.036 32.036 0 0 0 -32 32v416a32.036 32.036 0 0 0 32 32zm-16-32h32v16h-16a16.01833 16.01833 0 0 1 -16-16zm128-48h-80v-16h80zm0 16v16h-80v-16zm0 32v16h-80v-16zm0-80h-80v-16h80zm-32-32h-96v-176h96zm-64 16v16h-32v-16zm0 32v16h-32v-16zm0 32v16h-32v-16zm400 48h-288v-112h304v96a16.01833 16.01833 0 0 1 -16 16zm16-432v304h-336v-320h320a16.01833 16.01833 0 0 1 16 16zm-432-16h80v128h-96v-112a16.01833 16.01833 0 0 1 16-16z" />
                   <path d="m208 384h104v16h-104z" />
@@ -206,18 +206,18 @@ export default function Service() {
                   <path d="m210.66455 253.96094a8.00168 8.00168 0 0 0 6.21875 1.99023l72-8a7.99845 7.99845 0 0 0 4.77344-2.29443l29.65674-29.65674h19.24267l-6.44726 38.68457a7.99969 7.99969 0 0 0 4.31347 8.4707l16 8a8 8 0 0 0 10.93067-4.0039l20.14258-46.99951a33.75475 33.75475 0 0 0 -25.47608-46.59229l-17.37036-2.895 10.66483-10.66457h36.686a7.99948 7.99948 0 0 0 4.7998-1.6001l32-24a7.9996 7.9996 0 0 0 2.35547-9.97754l-8-16a7.99877 7.99877 0 0 0 -9.0957-4.18359l-29.49023 7.37256-25.2182-10.08716a23.96392 23.96392 0 0 0 .64886-5.52417v-27.05566a20.94358 20.94358 0 0 0 -30.31055-18.73291l-13.26709 6.6333a7.99924 7.99924 0 0 0 -4.42236 7.15527v24h-32a8.00164 8.00164 0 0 0 -2.97119.57227l-40 16a7.99975 7.99975 0 0 0 -5.02881 7.42773v16a7.99977 7.99977 0 0 0 8 8h45.75391l-5.36005 21.43921-22.33186 52.10718-44.5918 14.86425a8.00011 8.00011 0 0 0 -5.4702 7.58936v16a8.00089 8.00089 0 0 0 2.66455 5.96094zm162.64945-52.72022a17.73543 17.73543 0 0 1 -.52441 12.60791l-16.80078 39.20166-3.12647-1.56347 7.02881-42.17139a8.00034 8.00034 0 0 0 -7.89115-9.31543h-40.92871a20.1611 20.1611 0 0 1 -19.12647-26.53662l.96155-2.88464 32.12244 12.849a7.986 7.986 0 0 0 1.65729.45722l-.001.00616 32.7041 5.45069a17.7145 17.7145 0 0 1 13.9248 11.89891zm-21.314-57.24072a7.99877 7.99877 0 0 0 -5.65674 2.34326l-20.27 20.26953-28.61865-11.44726 6.30664-25.2251a8.0001 8.0001 0 0 0 -7.76125-9.94043h-8v-16h25.3761a23.97964 23.97964 0 0 0 37.033 11.17987l26.82165 10.72864 4.52291 18.09149zm-8-48a8 8 0 0 1 -16 0v-8h16zm69.85889 29.606-17.01984 12.76489-3.13751-12.55 18.01282-4.50348zm-77.01319-61.084a4.94339 4.94339 0 0 1 7.1543 4.42234v3.05566h-16v-3.05566zm-88.8457 52.8945 24-9.60022v12.18372h-24zm-24 120.34961 42.52979-14.17675a7.99955 7.99955 0 0 0 4.82324-4.438l8.81164-20.56055c.26654.43829.53235.877.81873 1.30664a36.07631 36.07631 0 0 0 20.894 14.91168l-17.54974 17.54975-60.32766 6.70312z" />
                 </svg>
               </div>
-              <h2 class="st-iconbox-title">Animated Website</h2>
-              <div class="st-iconbox-text">
+              <h2 className="st-iconbox-title">Animated Website</h2>
+              <div className="st-iconbox-text">
                 "Make your website stand out with my captivating animated design
                 and development services.
               </div>
             </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
+            <div className="st-height-b0 st-height-lg-b30"></div>
           </div>
           {/* <!-- .col --> */}
-          <div class="col-lg-4 col-md-6">
-            <div class="st-iconbox st-style1">
-              <div class="st-iconbox-icon">
+          <div className="col-lg-4 col-md-6">
+            <div className="st-iconbox st-style1">
+              <div className="st-iconbox-icon">
                 <svg viewBox="0 0 512 512">
                   <g id="XMLID_1568_">
                     <g id="XMLID_652_">
@@ -257,17 +257,17 @@ export default function Service() {
                   </g>
                 </svg>
               </div>
-              <h2 class="st-iconbox-title">Responsive Website</h2>
-              <div class="st-iconbox-text">
+              <h2 className="st-iconbox-title">Responsive Website</h2>
+              <div className="st-iconbox-text">
                 "Create a seamless user experience on all devices with my expert
                 responsive website design.
               </div>
             </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
+            <div className="st-height-b0 st-height-lg-b30"></div>
           </div>
         </div>
       </div>
-      <div class="st-height-b100 st-height-lg-b80"></div>
+      <div className="st-height-b100 st-height-lg-b80"></div>
     </section>
   );
 }

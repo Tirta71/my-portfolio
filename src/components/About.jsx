@@ -2,21 +2,21 @@ import React from "react";
 import TirtaImage from "../gambar/Tirta.jpg";
 export default function About() {
   return (
-    <section id="about" class="st-about-wrap">
-      <div class="st-height-b100 st-height-lg-b80"></div>
-      <div class="container">
-        <div class="st-section-heading st-style1">
-          <h4 class="st-section-heading-title">ABOUT ME</h4>
-          <h2 class="st-section-heading-subtitle">ABOUT ME</h2>
+    <section id="about" className="st-about-wrap">
+      <div className="st-height-b100 st-height-lg-b80"></div>
+      <div className="container">
+        <div className="st-section-heading st-style1">
+          <h4 className="st-section-heading-title">ABOUT ME</h4>
+          <h2 className="st-section-heading-subtitle">ABOUT ME</h2>
         </div>
-        <div class="st-height-b25 st-height-lg-b25"></div>
+        <div className="st-height-b25 st-height-lg-b25"></div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 wow fadeInLeft">
-            <div class="st-about-img-wrap">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 wow fadeInLeft">
+            <div className="st-about-img-wrap">
               <div
-                class="st-about-img st-dynamic-bg st-bg"
+                className="st-about-img st-dynamic-bg st-bg"
                 data-src="assets/img/tirta.jpg"
               >
                 <img
@@ -30,17 +30,17 @@ export default function About() {
                 />
               </div>
             </div>
-            <div class="st-height-b0 st-height-lg-b30"></div>
+            <div className="st-height-b0 st-height-lg-b30"></div>
           </div>
-          <div class="col-lg-6">
-            <div class="st-vertical-middle">
-              <div class="st-vertical-middle-in">
-                <div class="st-text-block st-style1">
-                  <h2 class="st-text-block-title">
+          <div className="col-lg-6">
+            <div className="st-vertical-middle">
+              <div className="st-vertical-middle-in">
+                <div className="st-text-block st-style1">
+                  <h2 className="st-text-block-title">
                     Hi There! I'm Tirta Samara
                   </h2>
-                  <h4 class="st-text-block-subtitle">Web Developer</h4>
-                  <div class="st-text-block-text">
+                  <h4 className="st-text-block-subtitle">Web Developer</h4>
+                  <div className="st-text-block-text">
                     <p>
                       As a web developer, I have a strong background in
                       designing and developing websites and web applications. I
@@ -49,7 +49,7 @@ export default function About() {
                       tools such as React, Vue.js, or Angular.
                     </p>
                   </div>
-                  <ul class="st-text-block-details st-mp0">
+                  <ul className="st-text-block-details st-mp0">
                     <li>
                       <span>Birthday</span> : <span>October 08, 2001</span>
                     </li>
@@ -70,10 +70,10 @@ export default function About() {
                       <span>Freelance</span> : <span>Available</span>
                     </li>
                   </ul>
-                  <div class="st-text-block-btn">
+                  <div className="st-text-block-btn">
                     <a
                       href="uploads/CV_TIRTASAMARA.pdf"
-                      class="st-btn st-style1 st-color1"
+                      className="st-btn st-style1 st-color1"
                     >
                       Download CV
                     </a>
