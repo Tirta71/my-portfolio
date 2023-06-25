@@ -48,4 +48,18 @@ export const portfolios = [
     category: "Full Interactive until payment",
     LinkProject: "https://coda-kw.vercel.app/",
   },
+  {
+    id: 8,
+    image: "assets/img/portfolio/TopUp.jpg",
+    title: "My Website Top up",
+    category: "Creating a fully interactive website using own payment system.",
+    LinkProject: "https://topup-tirta.vercel.app/",
+  },
+  {
+    id: 9,
+    image: "assets/img/portfolio/AdminTopUp.jpg",
+    title: "Admin for my store",
+    category: "Full Interactive system",
+    LinkProject: "https://admin-store-beta.vercel.app/",
+  },
 ];
