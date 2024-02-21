@@ -46,7 +46,10 @@ export default function Portfolio({ portfolios }) {
                   >
                     <div
                       className="st-portfolio-img st-zoom-in"
-                      style={{ width: "370px", height: "300px" }}
+                      style={{
+                        width: "370px",
+                        height: "300px",
+                      }}
                     >
                       <img src={portfolio.image} alt="portfolio" />
                     </div>

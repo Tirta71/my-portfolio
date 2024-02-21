@@ -44,7 +44,7 @@ export default function HeroSection() {
         <div className="st-social-group wow fadeInLeft">
           <div className="st-social-link">
             <a
-              href="https://www.instagram.com/tirtajasi/"
+              href="https://www.instagram.com/tieertaa/"
               className="st-social-btn active"
             >
               <span className="st-social-icon">
@@ -61,7 +61,7 @@ export default function HeroSection() {
               </span>
               <span className="st-icon-name">Facebook</span>
             </a>
-            <a href="https://twitter.com/tieerta" className="st-social-btn">
+            <a href="https://twitter.com/Allegiant71" className="st-social-btn">
               <span className="st-social-icon">
                 <i className="fab fa-twitter"></i>
               </span>

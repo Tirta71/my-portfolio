@@ -72,7 +72,7 @@ export default function About() {
                   </ul>
                   <div className="st-text-block-btn">
                     <a
-                      href="uploads/CV_TIRTASAMARA.pdf"
+                      href="uploads/CV_ATS.pdf"
                       className="st-btn st-style1 st-color1"
                     >
                       Download CV

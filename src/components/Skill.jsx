@@ -55,13 +55,13 @@ export default function Skill({ skills }) {
               {skills.map((skill, index) => (
                 <div className="st-single-progressbar mb-4" key={index}>
                   <div className="st-progressbar-heading">
-                    <h3 className="st-progressbar-title">{skill.title}</h3>
+                    <h3 className="st-progressbar-title mt-2">{skill.title}</h3>
                     <div
                       className="st-progressbar-percentage wow fadeInLeft"
                       data-wow-duration="1.5s"
                       data-wow-delay="0.5s"
                     >
-                      {skill.percentage}%
+                      {skill.percentage}
                     </div>
                   </div>
                   <div
