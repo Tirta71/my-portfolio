@@ -20,4 +20,18 @@ export const portfolios = [
     category: "Full Interactive until payment",
     LinkProject: "https://coda-kw.vercel.app/",
   },
+  {
+    id: 4,
+    image: "assets/img/portfolio/MarketPlace.png",
+    title: "Market Place ",
+    category: "Market place jual beli barang bekas",
+    LinkProject: "https://rpl2-market-place.vercel.app/",
+  },
+  {
+    id: 5,
+    image: "assets/img/portfolio/Travel.png",
+    title: "Travel",
+    category: "Travel wisata antar bandung",
+    LinkProject: "https://rpl2-market-place.vercel.app/",
+  },
 ];
