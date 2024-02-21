@@ -12,11 +12,7 @@ export default function HeaderKu() {
       <div className="st-main-header">
         <div className="container">
           <div className="st-main-header-in">
-            <div className="st-main-header-left">
-              <a className="st-site-branding" href="index.html">
-                TIRTA
-              </a>
-            </div>
+            <div className="st-main-header-left"></div>
             <div className="st-main-header-right">
               <nav className="st-nav">
                 <ul className="st-nav-list st-onepage-nav">
