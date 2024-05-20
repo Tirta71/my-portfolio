@@ -1,5 +1,5 @@
 import React from "react";
-import TirtaImage from "../gambar/Tirta.jpg";
+import TirtaImage from "../gambar/my_profile.jpg";
 export default function About() {
   return (
     <section id="about" className="st-about-wrap">
@@ -26,6 +26,7 @@ export default function About() {
                     height: "500px",
                     width: "100%",
                     objectFit: "cover",
+                    borderRadius: "20px",
                   }}
                 />
               </div>

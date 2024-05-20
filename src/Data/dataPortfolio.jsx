@@ -34,4 +34,11 @@ export const portfolios = [
     category: "Travel wisata antar bandung",
     LinkProject: "https://rpl2-market-place.vercel.app/",
   },
+  {
+    id: 6,
+    image: "assets/img/portfolio/fundraising_website.png",
+    title: "Charity",
+    category: "Fundraising website mudah & praktis",
+    LinkProject: "https://front-end-fundraising.vercel.app/",
+  },
 ];
