@@ -1,10 +1,16 @@
-import React from "react";
+import Aos from "aos";
+import React, { useEffect } from "react";
 
 export default function Service() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1200, // Animation duration
+    });
+  }, []);
   return (
     <section>
       <div className="st-height-b100 st-height-lg-b80"></div>
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div className="st-section-heading st-style1">
           <h4 className="st-section-heading-title">SERVICES</h4>
           <h2 className="st-section-heading-subtitle">SERVICES</h2>
@@ -16,7 +22,7 @@ export default function Service() {
 
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6" data-aos="fade-up">
             <div className="st-iconbox st-style1">
               <div className="st-iconbox-icon">
                 <svg viewBox="0 0 512 512">
@@ -44,7 +50,7 @@ export default function Service() {
             <div className="st-height-b30 st-height-lg-b30"></div>
           </div>
           {/* <!-- .col --> */}
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6" data-aos="fade-up">
             <div className="st-iconbox st-style1">
               <div className="st-iconbox-icon">
                 <svg viewBox="0 0 512 512">
@@ -141,7 +147,7 @@ export default function Service() {
             <div className="st-height-b30 st-height-lg-b30"></div>
           </div>
           {/* <!-- .col --> */}
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6" data-aos="fade-up">
             <div className="st-iconbox st-style1">
               <div className="st-iconbox-icon">
                 <svg viewBox="0 0 64 64">
@@ -163,7 +169,7 @@ export default function Service() {
             <div className="st-height-b30 st-height-lg-b30"></div>
           </div>
           {/* <!-- .col --> */}
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6" data-aos="fade-up">
             <div className="st-iconbox st-style1">
               <div className="st-iconbox-icon">
                 <svg viewBox="0 0 512 512">
@@ -183,7 +189,7 @@ export default function Service() {
             <div className="st-height-b0 st-height-lg-b30"></div>
           </div>
           {/* <!-- .col --> */}
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6" data-aos="fade-up">
             <div className="st-iconbox st-style1">
               <div className="st-iconbox-icon">
                 <svg viewBox="0 0 512 512">
@@ -215,7 +221,7 @@ export default function Service() {
             <div className="st-height-b0 st-height-lg-b30"></div>
           </div>
           {/* <!-- .col --> */}
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-4 col-md-6" data-aos="fade-up">
             <div className="st-iconbox st-style1">
               <div className="st-iconbox-icon">
                 <svg viewBox="0 0 512 512">

@@ -1,79 +1,89 @@
+import Aos from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 import React, { useEffect } from "react";
 
 export default function Skill({ skills }) {
   useEffect(() => {
-    progressBarInit();
+    Aos.init({
+      duration: 1200, // Animation duration
+      easing: "ease-in-out",
+    });
   }, []);
 
-  function progressBarInit() {
-    const progressBars = document.querySelectorAll(".st-progressbar");
-    progressBars.forEach((progressBar) => {
-      const progressPercentage = progressBar.dataset.progress + "%";
-      progressBar.querySelector(".st-progressbar-in").style.width =
-        progressPercentage;
-    });
-  }
-
   return (
-    <section className="st-dark-bg" id="my-skill">
-      <div className="st-height-b100 st-height-lg-b80"></div>
-      <div className="container">
+    <section className="st-dark-bg py-5" id="my-skill">
+      <div className="container" data-aos="fade-up">
         <div className="st-section-heading st-style1">
           <h4 className="st-section-heading-title">MY SKILLS</h4>
           <h2 className="st-section-heading-subtitle">MY SKILLS</h2>
         </div>
         <div className="st-height-b25 st-height-lg-b25"></div>
-      </div>
 
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6">
-            <div className="st-skill-wrap">
-              <div className="st-skill-heading">
-                <h2 className="st-skill-title">
-                  All the skills that I have in that field of work are
-                  mentioned.
-                </h2>
-                <div className="st-skill-subtitle">
-                  It indicates that they do not believe there are any additional
-                  skills that need to be mentioned since they have already been
-                  covered. <br />
-                  <br />
-                  It can also suggest that the person is self-aware and knows
-                  their strengths and weaknesses, and is able to communicate
-                  effectively about their skills to potential employers or
-                  colleagues.
+        <div className="row g-4">
+          {skills.slice(0, 3).map((skill, index) => (
+            <div
+              className="col-lg-4 col-md-4 col-sm-6 mb-4"
+              key={index}
+              data-aos="fade-left"
+              data-aos-delay={index * 200} // Menambahkan penundaan animasi
+            >
+              <div className="card text-center bg-dark border border-warning">
+                <div className="card-body">
+                  <img
+                    src={skill.icon}
+                    alt={`${skill.title} icon`}
+                    className="mb-3"
+                    style={{ width: "64px", height: "64px" }}
+                  />
+                  <h5 className="card-title text-light">{skill.title}</h5>
                 </div>
               </div>
-              {/* <!-- .st-skill-heading --> */}
             </div>
-          </div>
-
-          <div className="col-lg-6">
-            <div className="st-height-b0 st-height-lg-b30"></div>
-            <div className="st-progressbar-wrap">
-              {skills.map((skill, index) => (
-                <div className="st-single-progressbar mb-4" key={index}>
-                  <div className="st-progressbar-heading">
-                    <h3 className="st-progressbar-title mt-2">{skill.title}</h3>
-                    <div
-                      className="st-progressbar-percentage wow fadeInLeft"
-                      data-wow-duration="1.5s"
-                      data-wow-delay="0.5s"
-                    >
-                      {skill.percentage}
-                    </div>
-                  </div>
-                  <div
-                    className="st-progressbar"
-                    data-progress={skill.percentage}
-                  >
-                    <div className="st-progressbar-in wow fadeInLeft"></div>
-                  </div>
+          ))}
+        </div>
+        <div className="row g-4 mt-4">
+          {skills.slice(3, 7).map((skill, index) => (
+            <div
+              className="col-lg-3 col-md-4 col-sm-6 mb-4"
+              key={index}
+              data-aos="fade-left"
+              data-aos-delay={(index + 3) * 200} // Menambahkan penundaan animasi
+            >
+              <div className="card text-center bg-dark border border-warning">
+                <div className="card-body">
+                  <img
+                    src={skill.icon}
+                    alt={`${skill.title} icon`}
+                    className="mb-3"
+                    style={{ width: "64px", height: "64px" }}
+                  />
+                  <h5 className="card-title text-light">{skill.title}</h5>
                 </div>
-              ))}
+              </div>
             </div>
-          </div>
+          ))}
+        </div>
+        <div className="row g-4 mt-4">
+          {skills.slice(7).map((skill, index) => (
+            <div
+              className="col-12 col-md-6 mb-4"
+              key={index}
+              data-aos="fade-left"
+              data-aos-delay={(index + 7) * 200} // Menambahkan penundaan animasi
+            >
+              <div className="card text-center bg-dark border border-warning">
+                <div className="card-body">
+                  <img
+                    src={skill.icon}
+                    alt={`${skill.title} icon`}
+                    className="mb-3"
+                    style={{ width: "64px", height: "64px" }}
+                  />
+                  <h5 className="card-title text-light">{skill.title}</h5>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

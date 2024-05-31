@@ -1,9 +1,21 @@
-import React, { useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect, useState } from "react";
 
 export default function Portfolio({ portfolios }) {
   const [visibleItems, setVisibleItems] = useState(3);
   const [isHovered, setIsHovered] = useState(false);
   const totalItems = portfolios.length;
+
+  useEffect(() => {
+    Aos.init({
+      duration: 1200, // Animation duration
+    });
+  }, []);
+
+  useEffect(() => {
+    Aos.refresh(); // Recalculate AOS positions after updating visible items
+  }, [visibleItems]);
 
   const showMoreItems = () => {
     setVisibleItems((prevVisibleItems) => prevVisibleItems + 3);
@@ -36,8 +48,13 @@ export default function Portfolio({ portfolios }) {
       </div>
       <div className="container" style={{ marginTop: "5rem" }}>
         <div className="row">
-          {portfolios.slice(0, visibleItems).map((portfolio) => (
-            <div className="col-lg-4 col-md-6" key={portfolio.id}>
+          {portfolios.slice(0, visibleItems).map((portfolio, index) => (
+            <div
+              className="col-lg-4 col-md-6"
+              key={portfolio.id}
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
+            >
               <div className="st-portfolio-single st-style1 st-lightgallery">
                 <div className="st-portfolio-item">
                   <a

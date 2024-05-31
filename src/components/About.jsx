@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TirtaImage from "../gambar/my_profile.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Animation duration
+    });
+  }, []);
+
   return (
     <section id="about" className="st-about-wrap">
       <div className="st-height-b100 st-height-lg-b80"></div>
       <div className="container">
-        <div className="st-section-heading st-style1">
+        <div className="st-section-heading st-style1" data-aos="fade-up">
           <h4 className="st-section-heading-title">ABOUT ME</h4>
           <h2 className="st-section-heading-subtitle">ABOUT ME</h2>
         </div>
@@ -13,12 +22,9 @@ export default function About() {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 wow fadeInLeft">
+          <div className="col-lg-6" data-aos="fade-right">
             <div className="st-about-img-wrap">
-              <div
-                className="st-about-img st-dynamic-bg st-bg"
-                data-src="assets/img/tirta.jpg"
-              >
+              <div className="st-about-img st-dynamic-bg st-bg">
                 <img
                   src={TirtaImage}
                   alt="Tirta.jpg"
@@ -33,7 +39,7 @@ export default function About() {
             </div>
             <div className="st-height-b0 st-height-lg-b30"></div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6" data-aos="fade-left">
             <div className="st-vertical-middle">
               <div className="st-vertical-middle-in">
                 <div className="st-text-block st-style1">
