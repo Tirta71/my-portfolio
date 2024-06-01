@@ -1,0 +1,92 @@
+#portfolio {
+  color: white;
+  padding: 3rem 0;
+}
+
+#portfolio h4 {
+  color: #fec544;
+}
+
+#portfolio .card {
+  background-color: #2a2a2a;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#portfolio .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#portfolio .custom-card-img {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+#portfolio .card-title a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#portfolio .card-title a:hover {
+  text-decoration: underline;
+}
+
+#portfolio .card-text {
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  color: #ccc;
+}
+
+#portfolio .card-tech {
+  font-size: 0.8rem;
+  color: #fec544;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+#portfolio .card-body {
+  padding: 0.75rem;
+}
+
+#portfolio .card-footer {
+  background-color: #2a2a2a;
+  border-top: 0;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#portfolio .card-footer a {
+  color: #999;
+  margin: 0 0.25rem;
+}
+
+#portfolio .card-footer a:hover {
+  color: #fec544;
+}
+
+#portfolio button {
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+#portfolio button:hover {
+  background-color: #999;
+  transform: scale(1.03);
+}
+
+.btn-group .btn {
+  margin: 0 5px;
+}
+
+#portfolio .active-category {
+  background-color: #f5bd1f;
+}

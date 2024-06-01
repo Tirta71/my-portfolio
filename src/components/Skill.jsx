@@ -1,6 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import React, { useEffect } from "react";
+import "./skills.css"; // Import custom CSS
 
 export default function Skill({ skills }) {
   useEffect(() => {
@@ -25,17 +26,18 @@ export default function Skill({ skills }) {
               className="col-lg-4 col-md-4 col-sm-6 mb-4"
               key={index}
               data-aos="fade-left"
-              data-aos-delay={index * 200} // Menambahkan penundaan animasi
+              data-aos-delay={index * 200}
             >
-              <div className="card text-center bg-dark border border-warning">
-                <div className="card-body">
+              <div className="card text-center skill-card">
+                <div className="card-body d-flex align-items-center justify-content-center flex-column">
                   <img
                     src={skill.icon}
                     alt={`${skill.title} icon`}
                     className="mb-3"
-                    style={{ width: "64px", height: "64px" }}
+                    style={{ width: "32px", height: "32px" }}
                   />
-                  <h5 className="card-title text-light">{skill.title}</h5>
+                  <h5 className="card-title mb-0">{skill.title}</h5>
+                  <p className="card-text skill-level mb-0">{skill.level}</p>
                 </div>
               </div>
             </div>
@@ -47,17 +49,18 @@ export default function Skill({ skills }) {
               className="col-lg-3 col-md-4 col-sm-6 mb-4"
               key={index}
               data-aos="fade-left"
-              data-aos-delay={(index + 3) * 200} // Menambahkan penundaan animasi
+              data-aos-delay={(index + 3) * 200}
             >
-              <div className="card text-center bg-dark border border-warning">
-                <div className="card-body">
+              <div className="card text-center skill-card">
+                <div className="card-body d-flex align-items-center justify-content-center flex-column">
                   <img
                     src={skill.icon}
                     alt={`${skill.title} icon`}
                     className="mb-3"
-                    style={{ width: "64px", height: "64px" }}
+                    style={{ width: "32px", height: "32px" }}
                   />
-                  <h5 className="card-title text-light">{skill.title}</h5>
+                  <h5 className="card-title mb-0">{skill.title}</h5>
+                  <p className="card-text skill-level mb-0">{skill.level}</p>
                 </div>
               </div>
             </div>
@@ -66,20 +69,21 @@ export default function Skill({ skills }) {
         <div className="row g-4 mt-4">
           {skills.slice(7).map((skill, index) => (
             <div
-              className="col-12 col-md-6 mb-4"
+              className="col-lg-4 col-md-4 col-sm-6 mb-4"
               key={index}
               data-aos="fade-left"
-              data-aos-delay={(index + 7) * 200} // Menambahkan penundaan animasi
+              data-aos-delay={(index + 7) * 200}
             >
-              <div className="card text-center bg-dark border border-warning">
-                <div className="card-body">
+              <div className="card text-center skill-card">
+                <div className="card-body d-flex align-items-center justify-content-center flex-column">
                   <img
                     src={skill.icon}
                     alt={`${skill.title} icon`}
                     className="mb-3"
-                    style={{ width: "64px", height: "64px" }}
+                    style={{ width: "32px", height: "32px" }}
                   />
-                  <h5 className="card-title text-light">{skill.title}</h5>
+                  <h5 className="card-title mb-0">{skill.title}</h5>
+                  <p className="card-text skill-level mb-0">{skill.level}</p>
                 </div>
               </div>
             </div>

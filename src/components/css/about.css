@@ -1,0 +1,61 @@
+.st-about-wrap {
+  padding: 4rem 0;
+  background-color: #0b1120; /* Warna background */
+}
+
+.st-about-img-wrap {
+  text-align: center;
+}
+
+.st-about-img {
+  max-width: 100%;
+  border-radius: 10px; /* Radius border untuk memberikan efek rounded */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Efek shadow */
+  transition: transform 0.3s ease;
+}
+
+.st-about-img:hover {
+  transform: scale(1.05);
+}
+
+.st-about-text-wrap {
+  text-align: left;
+  color: #fff; /* Warna teks */
+}
+
+.welcome-text {
+  color: #fec544;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.st-about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.st-about-description {
+  font-size: 1rem;
+  color: #ccc; /* Warna teks deskripsi */
+  margin-bottom: 2rem;
+}
+
+.st-btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.st-btn-primary {
+  background-color: #fec544;
+  color: #0b1120;
+}
+
+.st-btn-primary:hover {
+  background-color: #e0b43c;
+  color: #0b1120;
+}

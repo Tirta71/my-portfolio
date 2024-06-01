@@ -1,27 +1,31 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import React, { useEffect, useState } from "react";
+import "./portfolio.css"; // custom CSS file
 
 export default function Portfolio({ portfolios }) {
   const [visibleItems, setVisibleItems] = useState(3);
   const [isHovered, setIsHovered] = useState(false);
-  const totalItems = portfolios.length;
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  const categories = [
+    "All",
+    ...new Set(portfolios.map((portfolio) => portfolio.category)),
+  ];
 
   useEffect(() => {
     Aos.init({
-      duration: 1200, // Animation duration
+      duration: 1200,
     });
   }, []);
 
   useEffect(() => {
-    Aos.refresh(); // Recalculate AOS positions after updating visible items
+    Aos.refresh();
   }, [visibleItems]);
 
   const showMoreItems = () => {
     setVisibleItems((prevVisibleItems) => prevVisibleItems + 3);
   };
-
-  const isViewMoreVisible = visibleItems < totalItems;
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -39,42 +43,88 @@ export default function Portfolio({ portfolios }) {
     transform: isHovered ? "scale(1.03)" : "scale(1)",
   };
 
+  const filteredPortfolios =
+    selectedCategory === "All"
+      ? portfolios
+      : portfolios.filter(
+          (portfolio) => portfolio.category === selectedCategory
+        );
+
+  const isViewMoreVisible = filteredPortfolios.length > visibleItems;
+
   return (
-    <section id="portfolio">
-      <div className="st-height-b100 st-height-lg-b80"></div>
-      <div className="st-section-heading st-style1">
-        <h4 className="st-section-heading-title">PORTFOLIOS</h4>
-        <h2 className="st-section-heading-subtitle">PORTFOLIOS</h2>
-      </div>
-      <div className="container" style={{ marginTop: "5rem" }}>
+    <section id="portfolio" className="py-5">
+      <div className="container">
+        <div className="text-center mb-5">
+          <h4 className="text-uppercase">Portfolios</h4>
+          <h2 className="font-weight-bold">Past Project Experience</h2>
+          <p>Explore the projects I've worked on so far</p>
+          <div className="btn-group mt-3" role="group">
+            {categories.map((category) => (
+              <button
+                key={category}
+                type="button"
+                className={`btn btn-outline-light ${
+                  selectedCategory === category ? "active-category" : ""
+                }`}
+                onClick={() => {
+                  setSelectedCategory(category);
+                  setVisibleItems(3); // Reset visible items to 3 when category changes
+                }}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
         <div className="row">
-          {portfolios.slice(0, visibleItems).map((portfolio, index) => (
+          {filteredPortfolios.slice(0, visibleItems).map((portfolio, index) => (
             <div
-              className="col-lg-4 col-md-6"
+              className="col-lg-4 col-md-6 mb-4"
               key={portfolio.id}
               data-aos="fade-up"
               data-aos-delay={`${index * 100}`}
             >
-              <div className="st-portfolio-single st-style1 st-lightgallery">
-                <div className="st-portfolio-item">
+              <div className="card h-100 border-0 shadow custom-card">
+                <a
+                  href={portfolio.LinkProject}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div
+                    className="card-img-top custom-card-img"
+                    style={{
+                      backgroundImage: `url(${portfolio.image})`,
+                    }}
+                  ></div>
+                </a>
+                <div className="card-body">
+                  <h5 className="card-title text-center">
+                    <a
+                      href={portfolio.LinkProject}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {portfolio.title}
+                    </a>
+                  </h5>
+                  <p className="card-text">{portfolio.description}</p>
+                  <p className="card-tech">{portfolio.tech}</p>
+                </div>
+                <div className="card-footer text-center">
                   <a
                     href={portfolio.LinkProject}
-                    className="st-portfolio st-zoom st-lightbox-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <div
-                      className="st-portfolio-img st-zoom-in"
-                      style={{
-                        width: "370px",
-                        height: "300px",
-                      }}
-                    >
-                      <img src={portfolio.image} alt="portfolio" />
-                    </div>
-                    <div className="st-portfolio-item-hover">
-                      <i className="fas fa-plus-circle"></i>
-                      <h5>{portfolio.title}</h5>
-                      <p>{portfolio.category}</p>
-                    </div>
+                    <i className="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href={portfolio.repoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fas fa-code"></i>
                   </a>
                 </div>
               </div>
