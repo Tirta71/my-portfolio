@@ -70,8 +70,8 @@ export const portfolios = [
     image: "assets/img/portfolio/travel_book.png",
     title: "Langkah Penuh Cerita",
     category: "Travel",
-    LinkProject: "https://front-end-fundraising.vercel.app/",
-    repoLink: "https://github.com/Tirta71/front_end_fundraising",
+    LinkProject: "https://langkahpenuhcerita-tirta71s-projects.vercel.app/",
+    repoLink: "https://github.com/Tirta71/next_js_travel",
     description:
       "A travel website offering tour packages and travel services across Nusantara.",
     tech: "Next JS, Tailwind, Laravel",

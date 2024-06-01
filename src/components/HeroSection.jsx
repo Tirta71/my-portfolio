@@ -22,7 +22,7 @@ export default function HeroSection() {
               Tirta <br />
               Samara
             </h1>
-            <h2>Front end Web Developer</h2>
+            <h2>Full Stack Web Developer</h2>
             <div className="st-hero-btn">
               <a
                 href="mailto:tirta@gmail.com"
