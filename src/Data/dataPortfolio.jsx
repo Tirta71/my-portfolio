@@ -59,7 +59,7 @@ export const portfolios = [
     image: "assets/img/portfolio/fundraising_website.png",
     title: "Charity",
     category: "Fundraising",
-    LinkProject: "https://front-end-fundraising.vercel.app/",
+    LinkProject: "http://donasi.tirta.site/",
     repoLink: "https://github.com/Tirta71/front_end_fundraising",
     description:
       "A user-friendly fundraising platform designed to facilitate easy and efficient donation collections for various causes.",
@@ -70,7 +70,7 @@ export const portfolios = [
     image: "assets/img/portfolio/travel_book.png",
     title: "Langkah Penuh Cerita",
     category: "Travel",
-    LinkProject: "https://langkahpenuhcerita-tirta71s-projects.vercel.app/",
+    LinkProject: "https://langkahpenuhcerita.tirta.site/",
     repoLink: "https://github.com/Tirta71/next_js_travel",
     description:
       "A travel website offering tour packages and travel services across Nusantara.",
