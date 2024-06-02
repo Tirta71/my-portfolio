@@ -3,6 +3,7 @@
   background-color: #1e1e1e; /* Warna background yang sesuai */
   border-radius: 5px; /* Radius border untuk memberikan efek rounded */
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .skill-card:hover {
@@ -23,11 +24,10 @@
 }
 
 .skill-card .skill-level {
-  opacity: 0; /* Awalnya disembunyikan */
   color: #ffffff; /* Warna teks */
   font-size: 0.875rem; /* Ukuran font teks level */
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transform: translateY(20px); /* Mulai dari bawah */
+  transition: all 0.3s;
+  transform: translateY(30px); /* Mulai dari bawah */
 }
 
 .skill-card:hover .card-title {
@@ -37,6 +37,7 @@
 .skill-card:hover .skill-level {
   opacity: 1; /* Tampilkan teks level */
   transform: translateY(0); /* Geser ke posisi semula */
+  color: #fec544;
 }
 
 .skill-card img {
