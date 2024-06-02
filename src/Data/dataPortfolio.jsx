@@ -48,7 +48,7 @@ export const portfolios = [
     image: "assets/img/portfolio/Travel.png",
     title: "Travel",
     category: "Travel",
-    LinkProject: "https://rpl2-market-place.vercel.app/",
+    LinkProject: "https://traveloki-rpl.vercel.app/",
     repoLink: "https://github.com/Tirta71/traveloki-rpl",
     description:
       "A travel website offering tour packages and travel services across Bandung, with booking and itinerary management features.",
