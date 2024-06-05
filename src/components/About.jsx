@@ -31,7 +31,7 @@ export default function About() {
               <h1 className="st-about-title">I'm Tirta Samara</h1>
               <p className="st-about-description">
                 As a web developer, I have advanced skills in HTML, CSS, and
-                JavaScript, along with experience in frameworks like React.js,
+                JavaScript, along with experience in frameworks like React.js
                 Next.js, Bootstrap, and Tailwind CSS. I have worked with
                 TypeScript for adding static type definitions, and have
                 intermediate knowledge of back-end technologies such as Laravel
@@ -39,7 +39,7 @@ export default function About() {
                 CSS and building responsive, dynamic web applications.
               </p>
               <a
-                href="uploads/CV_ATS.pdf"
+                href="uploads/CV_ATS_TIRTA.pdf"
                 className="st-btn st-style1 st-color1"
               >
                 Download CV
