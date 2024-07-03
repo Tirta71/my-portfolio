@@ -20,7 +20,7 @@ export const certificates = [
   },
   {
     title: "Devfest 2023 ",
-    description: "Participant Developer Festival",
+    description: "Participant Google Developer Group",
     date: "December 2023",
     imageUrl: "/assets/img/Certificate/Devfest.png",
   },
