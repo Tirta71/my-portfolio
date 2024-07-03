@@ -62,6 +62,17 @@ export default function HeaderKu() {
                   </li>
                   <li>
                     <a
+                      href="#certificate"
+                      className={`st-smooth-move ${
+                        activeLink === "certificate" ? "active" : ""
+                      }`}
+                      onClick={() => handleClick("certificate")}
+                    >
+                      Certificate
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="#portfolio"
                       className={`st-smooth-move ${
                         activeLink === "portfolio" ? "active" : ""

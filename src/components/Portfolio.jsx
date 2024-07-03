@@ -55,8 +55,14 @@ export default function Portfolio({ portfolios }) {
   return (
     <section id="portfolio" className="py-5">
       <div className="container">
+        <div className="container" data-aos="fade-up">
+          <div className="st-section-heading st-style1">
+            <h4 className="st-section-heading-title">Portfolios</h4>
+            <h2 className="st-section-heading-subtitle">Portfolios</h2>
+          </div>
+          <div className="st-height-b25 st-height-lg-b25"></div>
+        </div>
         <div className="text-center mb-5">
-          <h4 className="text-uppercase">Portfolios</h4>
           <h2 className="font-weight-bold">Past Project Experience</h2>
           <p>Explore the projects I've worked on so far</p>
           <div className="btn-group mt-3" role="group">

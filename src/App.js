@@ -4,11 +4,12 @@ import HeroSection from "./components/HeroSection";
 import MyFooter from "./components/MyFooter";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
-import Service from "./components/Service";
+
 import Skill from "./components/Skill";
 import HeaderKu from "./components/header";
 import { skills } from "./Data/dataSkill";
 import { portfolios } from "./Data/dataPortfolio";
+import Certifcate from "./components/Certifcate";
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
       <HeaderKu />
       <HeroSection />
       <About />
-      <Service />
       <Skill skills={skills} />
       <Resume />
+      <Certifcate />
       <Portfolio portfolios={portfolios} />
       <MyFooter />
     </div>
