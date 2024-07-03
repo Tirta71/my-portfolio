@@ -22,12 +22,12 @@ export const certificates = [
     title: "Devfest 2023 ",
     description: "Participant",
     date: "December 2023",
-    imageUrl: "/assets/img/Certificate/devfest.png",
+    imageUrl: "/assets/img/Certificate/Devfest.png",
   },
   {
     title: "Study Independent MSIB",
     description: "Participant Nurul Fikri Computer",
     date: "July 2024",
-    imageUrl: "/assets/img/Certificate/msib.png",
+    imageUrl: "/assets/img/Certificate/MSIB.png",
   },
 ];
