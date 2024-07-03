@@ -26,6 +26,14 @@ const Certificate = () => {
     setSelectedImage("");
   };
 
+  // Fungsi untuk mengurutkan sertifikat berdasarkan tanggal terbaru
+  const sortedCertificates = certificates.sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+
+    return dateB - dateA;
+  });
+
   return (
     <section
       id="certificate"
@@ -46,7 +54,7 @@ const Certificate = () => {
           gap: "20px",
         }}
       >
-        {certificates.map((cert, index) => (
+        {sortedCertificates.map((cert, index) => (
           <div
             key={index}
             data-aos="fade-up"

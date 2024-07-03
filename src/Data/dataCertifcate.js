@@ -14,13 +14,13 @@ export const certificates = [
   },
   {
     title: "Luar Sekolah",
-    description: "Participant",
+    description: "Participant Luar Sekolah",
     date: "March 2024",
     imageUrl: "/assets/img/Certificate/Peserta_Navigating the workplace.png",
   },
   {
     title: "Devfest 2023 ",
-    description: "Participant",
+    description: "Participant Developer Festival",
     date: "December 2023",
     imageUrl: "/assets/img/Certificate/Devfest.png",
   },
