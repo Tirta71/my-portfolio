@@ -62,7 +62,7 @@ export default function Portfolio({ portfolios }) {
           </div>
           <div className="st-height-b25 st-height-lg-b25"></div>
         </div>
-        <div className="text-center mb-5">
+        <div className="text-center mb-5" data-aos="fade-up">
           <h2 className="font-weight-bold">Past Project Experience</h2>
           <p>Explore the projects I've worked on so far</p>
           <div className="btn-group mt-3" role="group">
