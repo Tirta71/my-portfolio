@@ -8,7 +8,7 @@ export const certificates = [
   },
   {
     title: "Build With Angga",
-    description: "Finishing Project With laravel",
+    description: "Web Developer With laravel",
     date: "May 2024",
     imageUrl: "/assets/img/Certificate/Web Developer With Laravel 11.png",
   },

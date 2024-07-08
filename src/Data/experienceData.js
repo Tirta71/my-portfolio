@@ -15,6 +15,14 @@ export const experienceData = [
       "As a freelance front-end web developer, I specialize in creating beautiful, functional, and responsive websites for clients. I have expertise in HTML, CSS, JavaScript, and various front-end frameworks such as React, Vue, and Angular. I work closely with clients to understand their needs and design websites that meet their goals and expectations. I am committed to delivering high-quality work and building long-term relationships with my clients.",
     icon: "assets/img/icon/resume-icon1.png", // URL ke icon yang sesuai
   },
+  {
+    title: "Participant MSIB at Nurul Fikri Acedemy",
+    duration: "Febuary 2024 - July 2024",
+    location: "Fullstack Web Development",
+    description:
+      "Awarded as the Best Participant in the Certified Independent Study and Internship Program (MSIB) organized by Kampus Merdeka, Batch 6. During this program, which spanned from February to June 2024, exceptional skills and dedication in Fullstack Web Development were demonstrated at NF Academy. This achievement reflects a strong commitment to excellence, the ability to tackle complex problems, and effective collaboration with peers and mentors to deliver outstanding projects",
+    icon: "assets/img/icon/resume-icon1.png", // URL ke icon yang sesuai
+  },
 ];
 
 export const educationData = [
