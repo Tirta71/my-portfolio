@@ -25,8 +25,10 @@ export default function HeroSection() {
             <h2>Full Stack Web Developer</h2>
             <div className="st-hero-btn">
               <a
-                href="mailto:tirta@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=tirta4132@gmail.com"
                 className="st-btn st-style1 st-color1 st-smooth-move"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Hire me
               </a>
