@@ -26,7 +26,6 @@ const Certificate = () => {
     setSelectedImage("");
   };
 
-  // Fungsi untuk mengurutkan sertifikat berdasarkan tanggal terbaru
   const sortedCertificates = certificates.sort((a, b) => {
     const dateA = new Date(a.date);
     const dateB = new Date(b.date);

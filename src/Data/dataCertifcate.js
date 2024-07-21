@@ -30,4 +30,10 @@ export const certificates = [
     date: "July 2024",
     imageUrl: "/assets/img/Certificate/MSIB.png",
   },
+  {
+    title: "BNSP Web Developer",
+    description: "Certified Web Developer by BNSP",
+    date: "July 2024",
+    imageUrl: "/assets/img/Certificate/bnsp.png",
+  },
 ];
