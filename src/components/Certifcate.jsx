@@ -37,6 +37,7 @@ const Certificate = () => {
     <section
       id="certificate"
       style={{ backgroundColor: "#0e101a", color: "#fff", padding: "50px 0" }}
+      className="container"
     >
       <div className="container" data-aos="fade-up">
         <div className="st-section-heading st-style1">
@@ -62,8 +63,9 @@ const Certificate = () => {
               backgroundColor: "#1b1e2b",
               borderRadius: "10px",
               padding: "20px",
-              width: "300px",
+              width: "calc(25% - 20px)",
               textAlign: "center",
+              boxSizing: "border-box",
             }}
           >
             <img

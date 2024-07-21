@@ -1,7 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function HeaderKu() {
   const [activeLink, setActiveLink] = useState("home");
+
+  const handleScroll = () => {
+    const sections = document.querySelectorAll("section");
+    const scrollPos = window.scrollY + window.innerHeight / 2;
+
+    sections.forEach((section) => {
+      const top = section.offsetTop;
+      const bottom = top + section.offsetHeight;
+      const id = section.getAttribute("id");
+
+      if (scrollPos >= top && scrollPos < bottom) {
+        setActiveLink(id);
+      }
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleClick = (link) => {
     setActiveLink(link);
