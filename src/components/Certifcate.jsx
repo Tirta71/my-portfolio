@@ -37,7 +37,6 @@ const Certificate = () => {
     <section
       id="certificate"
       style={{ backgroundColor: "#0e101a", color: "#fff", padding: "50px 0" }}
-      className="container"
     >
       <div className="container" data-aos="fade-up">
         <div className="st-section-heading st-style1">
@@ -53,6 +52,7 @@ const Certificate = () => {
           flexWrap: "wrap",
           gap: "20px",
         }}
+        className="container"
       >
         {sortedCertificates.map((cert, index) => (
           <div
