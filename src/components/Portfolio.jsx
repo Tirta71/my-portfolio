@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css"; // Import Swiper styles
+import "swiper/swiper-bundle.css";
 import "./portfolio.css"; // Import custom CSS file
 
 export default function Portfolio({ portfolios }) {
