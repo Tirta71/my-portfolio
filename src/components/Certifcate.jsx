@@ -9,11 +9,29 @@ Modal.setAppElement("#root");
 const Certificate = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
+  const [cardWidth, setCardWidth] = useState("calc(25% - 20px)");
 
   useEffect(() => {
     AOS.init({
       duration: 2000, // durasi animasi dalam milidetik
     });
+
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setCardWidth("calc(100% - 20px)");
+      } else if (window.innerWidth <= 992) {
+        setCardWidth("calc(50% - 20px)");
+      } else if (window.innerWidth <= 1200) {
+        setCardWidth("calc(33.333% - 20px)");
+      } else {
+        setCardWidth("calc(25% - 20px)");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Set initial value
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const openModal = (imageUrl) => {
@@ -48,8 +66,8 @@ const Certificate = () => {
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
           flexWrap: "wrap",
+          justifyContent: "center",
           gap: "20px",
         }}
         className="container"
@@ -63,9 +81,10 @@ const Certificate = () => {
               backgroundColor: "#1b1e2b",
               borderRadius: "10px",
               padding: "20px",
-              width: "calc(25% - 20px)",
+              width: cardWidth,
               textAlign: "center",
               boxSizing: "border-box",
+              marginBottom: "20px",
             }}
           >
             <img

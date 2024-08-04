@@ -90,3 +90,29 @@
 #portfolio .active-category {
   background-color: #f5bd1f;
 }
+
+/* Swiper styles */
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide .btn {
+  width: auto;
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+.swiper-categories {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .swiper-slide .btn {
+    width: 100%;
+  }
+}

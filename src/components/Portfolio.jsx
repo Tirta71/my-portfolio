@@ -1,7 +1,9 @@
+import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import React, { useEffect, useState } from "react";
-import "./portfolio.css"; // custom CSS file
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css"; // Import Swiper styles
+import "./portfolio.css"; // Import custom CSS file
 
 export default function Portfolio({ portfolios }) {
   const [visibleItems, setVisibleItems] = useState(3);
@@ -65,22 +67,31 @@ export default function Portfolio({ portfolios }) {
         <div className="text-center mb-5" data-aos="fade-up">
           <h2 className="font-weight-bold">Past Project Experience</h2>
           <p>Explore the projects I've worked on so far</p>
-          <div className="btn-group mt-3" role="group">
-            {categories.map((category) => (
-              <button
-                key={category}
-                type="button"
-                className={`btn btn-outline-light ${
-                  selectedCategory === category ? "active-category" : ""
-                }`}
-                onClick={() => {
-                  setSelectedCategory(category);
-                  setVisibleItems(3); // Reset visible items to 3 when category changes
-                }}
-              >
-                {category}
-              </button>
-            ))}
+          <div className="swiper-container mt-3">
+            <Swiper
+              spaceBetween={10}
+              slidesPerView="auto"
+              freeMode={true}
+              pagination={{ clickable: true }}
+              className="swiper-categories"
+            >
+              {categories.map((category) => (
+                <SwiperSlide key={category} className="swiper-slide">
+                  <button
+                    type="button"
+                    className={`btn btn-outline-light ${
+                      selectedCategory === category ? "active-category" : ""
+                    }`}
+                    onClick={() => {
+                      setSelectedCategory(category);
+                      setVisibleItems(3); // Reset visible items to 3 when category changes
+                    }}
+                  >
+                    {category}
+                  </button>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
         <div className="row">
