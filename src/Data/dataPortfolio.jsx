@@ -76,4 +76,26 @@ export const portfolios = [
       "A travel website offering tour packages and travel services across Nusantara.",
     tech: "Next JS, Tailwind, Laravel",
   },
+  {
+    id: 8,
+    image: "assets/img/portfolio/travela.png",
+    title: "Travela Travel Website",
+    category: "Travel",
+    LinkProject: "",
+    repoLink: "https://github.com/Tirta71/travela",
+    description:
+      "A travel website offering tour packages and travel services across Nusantara. for mobile user",
+    tech: "Laravel",
+  },
+  {
+    id: 9,
+    image: "assets/img/portfolio/3.jpg",
+    title: "Tokopedia Clone",
+    category: "E-Commerce",
+    LinkProject: "",
+    repoLink: "",
+    description:
+      "The Tokopedia Clone project is a replica of the popular e-commerce platform designed to provide a shopping experience similar to Tokopedia. This site is created to offer a range of e-commerce features that allow users to browse and purchase products online with ease",
+    tech: "Bootstrap, Javascript , Sass",
+  },
 ];
