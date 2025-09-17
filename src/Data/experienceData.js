@@ -35,11 +35,11 @@ export const educationData = [
     icon: "assets/img/icon/resume-icon2.png", // URL ke icon yang sesuai
   },
   {
-    title: "An Undergraduate Degree in Computer Science",
-    duration: "2021 - OnGoing",
+    title: "Bachelor's Degree in Computer Science",
+    duration: "2021 - 2025", // sesuaikan tahun kelulusanmu
     location: "Indonesian Computer University",
     description:
-      "I am currently enrolled in Indonesian Computer University, where I am pursuing my Bachelor's Degree in Computer Science. The university is known for its excellent programs in the field of computer science and technology, providing students with a comprehensive education that includes both theoretical and practical knowledge.",
-    icon: "assets/img/icon/resume-icon2.png", // URL ke icon yang sesuai
+      "I have successfully completed my Bachelor's Degree in Computer Science at Indonesian Computer University. The program equipped me with strong theoretical foundations and practical experience in computer science and technology, preparing me to apply my knowledge in real-world projects and professional environments.",
+    icon: "assets/img/icon/resume-icon2.png",
   },
 ];

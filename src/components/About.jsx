@@ -39,7 +39,7 @@ export default function About() {
                 CSS and building responsive, dynamic web applications.
               </p>
               <a
-                href="uploads/CV_ATS_TIRTA.pdf"
+                href="uploads/Tirta Samara - CV Fullstack Web Developer.pdf"
                 className="st-btn st-style1 st-color1"
               >
                 Download CV

@@ -3,7 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import "./portfolio.css"; // Import custom CSS file
+import "./portfolio.css"; 
 
 export default function Portfolio({ portfolios }) {
   const [visibleItems, setVisibleItems] = useState(3);
