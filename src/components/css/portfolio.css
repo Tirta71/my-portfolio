@@ -1,0 +1,105 @@
+/* Categories slider buttons */
+.cat-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.cat-btn:hover {
+  border-color: #fec544;
+  color: #fec544;
+  transform: translateY(-1px);
+}
+
+.active-category {
+  background-color: #fec544 !important;
+  color: #000 !important;
+  border-color: #fec544 !important;
+  font-weight: 600;
+}
+
+/* Swiper slides for categories */
+.swiper-categories .swiper-slide {
+  width: auto !important;
+}
+
+/* Cards */
+.custom-card {
+  background: #151a22; /* dark theme selaras */
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+}
+
+.custom-card-img {
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card-title a:hover {
+  color: #fec544;
+}
+
+.card-text {
+  color: #cdd3dd;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-tech {
+  color: #93a3b8;
+  font-size: 0.85rem;
+}
+
+.card-footer {
+  background: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.card-footer a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #dbe2ee;
+  font-size: 1.05rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.card-footer a:hover {
+  color: #fec544;
+  transform: translateY(-2px);
+}
+
+/* Container Swiper kategori */
+.swiper-container {
+  display: flex;
+  justify-content: center; /* bikin isi di tengah */
+}
+
+/* Wrapper slides */
+.swiper-categories .swiper-wrapper {
+  justify-content: center; /* pastikan semua slide center */
+}
+
+/* Slide */
+.swiper-categories .swiper-slide {
+  width: auto !important; /* biar ukurannya mengikuti isi button */
+  display: flex;
+  justify-content: center;
+}
